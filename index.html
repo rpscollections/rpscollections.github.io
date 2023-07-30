@@ -14,10 +14,7 @@
       body {
         background-color: #f9eaf0;
       }
-      .jumbotron {
-        background-color: #fca7c7; /* Soft Pink Background */
-        color: #fff;
-      }
+
       .btn-pink {
         background-color: #fca7c7; /* Soft Pink Button */
         color: #fff;
@@ -97,13 +94,33 @@
         height: 100%;
         object-fit: cover;
       }
+
+      /* Custom styles for the Jumbotron */
+      .jumbotron {
+        background-color: #fca7c7; /* Pink background color */
+        color: #fff; /* White text color */
+        text-align: center;
+        padding: 50px 0;
+        margin-bottom: 0; /* Remove margin bottom */
+      }
+
+      .jumbotron h1 {
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 1px; /* Spacing between characters */
+        margin-bottom: 20px;
+      }
+
+      .jumbotron p {
+        font-size: 20px;
+      }
     </style>
   </head>
   <body>
-    <div class="jumbotron text-center">
-      <h1>Pink Landing Page</h1>
-      <p>Welcome to our pink-themed landing page!</p>
-      <a href="#about" class="btn btn-pink btn-lg">Learn More</a>
+    <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1>RPS Collections</h1>
+      <p>Choose Your Favorite Outfit</p>
     </div>
 
     <div class="container mt-5">
