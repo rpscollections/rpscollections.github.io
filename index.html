@@ -3,342 +3,357 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pink Landing Page</title>
-    <!-- Bootstrap CSS -->
+    <title>RPS MAN'S | RPS COLLECTIONS</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <!-- Custom CSS -->
     <style>
       body {
-        background-color: #343434;
-      }
-
-      .btn-pink {
-        background-color: #000000; /* Soft Pink Button */
-        color: #fff;
-      }
-      .btn-pink:hover {
-        background-color: #f4eae0; /* Hover Pink Button */
-        color: #fff;
+        background-color: #000;
+        color: #f8f9fa;
       }
 
       .product-card {
+        background-color: #333;
         border: none;
-        height: 600px; /* Mengatur tinggi kartu secara manual */
-        max-height: 600px; /* Tinggi maksimal sebelum muncul scrollbar */
-        overflow-y: auto;
+        border-radius: 8px;
+        padding: 15px;
       }
 
-      /* Mengatur posisi vertikal tombol prev/next di tengah */
-      .carousel-control-prev,
-      .carousel-control-next {
-        top: 50%;
-        transform: translateY(-50%);
+      .product-card img {
+        max-width: 100%;
+        border-radius: 8px;
       }
 
-      /* Mengatur lebar dan tinggi tombol prev/next */
-      .carousel-control-prev,
-      .carousel-control-next {
-        width: 50px;
-        height: 50px;
-        font-size: 20px;
-      }
-
-      /* Mengatur ukuran ikon pada tombol prev/next */
       .carousel-control-prev-icon,
       .carousel-control-next-icon {
-        background-color: #343434;
-        color: #fff;
-        padding: 10px;
+        background-color: #000;
         border-radius: 50%;
       }
 
-      /* Mengatur posisi ikon di tengah tombol prev/next */
-      .carousel-control-prev-icon,
-      .carousel-control-next-icon {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
+      .btn-whatsapp {
+        background-color: #25d366;
+        border: none;
       }
 
-      /* Mengatur warna ikon pada hover tombol prev/next */
-      .carousel-control-prev:hover .carousel-control-prev-icon,
-      .carousel-control-next:hover .carousel-control-next-icon {
-        background-color: #000000;
-      }
-
-      .footer-text {
-        transition: transform 0.3s ease;
-      }
-
-      .footer-text:hover {
-        transform: translateY(-5px);
-      }
-
-      .footer {
-        margin-top: 20px;
+      footer {
         padding: 20px 0;
-        background-color: #000000;
-        color: #fff;
-      }
-
-      .video-card-container {
-        height: 100%; /* You can adjust the height as needed */
-        overflow: hidden;
-      }
-
-      /* Set aspect ratio for the video itself */
-      .video-card-container video {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      /* Custom styles for the Jumbotron */
-      .jumbotron {
-        background-color: #000000; /* Pink background color */
-        color: #fff; /* White text color */
+        background-color: #111;
         text-align: center;
-        padding: 50px 0;
-        margin-bottom: 0; /* Remove margin bottom */
-      }
-
-      .jumbotron h1 {
-        font-size: 36px;
-        font-weight: bold;
-        letter-spacing: 1px; /* Spacing between characters */
-        margin-bottom: 20px;
-      }
-
-      .jumbotron p {
-        font-size: 20px;
-      }
-
-      .header-title {
-        color: #fff; /* White text color */
       }
 
       .card-title {
-        font-size: 20px;
-        font-weight: bold;
-      }
-
-      .harga {
-        font-size: 18px;
-        font-weight: bold;
-      }
-      .card-text {
-        font-size: 16px;
+        color: #ffffff;
+        text-shadow: 1px 1px 2px #000000;
       }
 
       .card-text,
-      p {
-        margin-bottom: 0px;
+      .fw-bold {
+        color: #dcdcdc;
       }
     </style>
   </head>
+
   <body>
-    <!-- Jumbotron -->
-    <div class="jumbotron">
-      <h1>RPS MAN Collections</h1>
-      <p>Kesan Sederhana, Gaya Kekinian, Perfect Match!</p>
+    <!-- Banner -->
+    <div class="container text-center py-5">
+      <h1 class="display-4">Temukan Pakaian Terbaikmu</h1>
+      <p class="lead">Koleksi eksklusif kami tersedia sekarang!</p>
     </div>
 
-    <div class="container mt-5">
-      <section id="about">
-        <div class="row">
-          <div class="col-md-12 header-title mb-4">
-            <h2>
-              Penawaran eksklusif, harga spesial untuk pembelian hari ini.
-            </h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 mb-5">
-            <div class="card product-card shadow-sm">
-              <!-- Video card container -->
-              <div class="video-card-container">
-                <video autoplay loop controls>
-                  <source src="123.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+    <!-- Product Grid -->
+    <div class="container py-5">
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- Product 1 -->
+        <div class="col">
+          <div class="product-card card h-100">
+            <div
+              id="carouselProduct1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://down-id.img.susercontent.com/file/076a25d2936880c6ad7c3348f8a44aef"
+                    class="d-block w-100"
+                    alt="Baju 1 - Gambar 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://down-id.img.susercontent.com/file/04fac1fd967271156b09759c5092d28f"
+                    class="d-block w-100"
+                    alt="Baju 1 - Gambar 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://down-id.img.susercontent.com/file/afa9cb602a3d90cec6bde5c0511756cd"
+                    class="d-block w-100"
+                    alt="Baju 1 - Gambar 3"
+                  />
+                </div>
               </div>
-              <!-- End of video card container -->
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-5">
-            <div class="card product-card shadow-sm">
-              <div
-                id="carouselProduct1"
-                class="carousel slide"
-                data-ride="carousel"
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProduct1"
+                data-bs-slide="prev"
               >
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li
-                    data-target="#carouselProduct1"
-                    data-slide-to="0"
-                    class="active"
-                  ></li>
-                  <li data-target="#carouselProduct1" data-slide-to="1"></li>
-                  <li data-target="#carouselProduct1" data-slide-to="2"></li>
-                </ol>
-
-                <!-- Slides -->
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img
-                      src="3.jpeg"
-                      alt="Product 1 - Image 1"
-                      class="d-block w-100"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="2.jpeg"
-                      alt="Product 1 - Image 2"
-                      class="d-block w-100"
-                    />
-                  </div>
-                  <div class="carousel-item">
-                    <img
-                      src="1.jpeg"
-                      alt="Product 1 - Image 2"
-                      class="d-block w-100"
-                    />
-                  </div>
-                </div>
-
-                <!-- Controls -->
-                <a
-                  class="carousel-control-prev"
-                  href="#carouselProduct1"
-                  role="button"
-                  data-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a
-                  class="carousel-control-next"
-                  href="#carouselProduct1"
-                  role="button"
-                  data-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-
-              <div class="card-body">
-                <a
-                  href="https://api.whatsapp.com/send?phone=+6285245065929&text=Hello%20I'm%20interested%20in%20the%20Super%20Comfortable%20Sofa"
-                  class="btn btn-pink btn-block mt-2 mb-4"
-                  >Beli Sekarang</a
-                >
-                <h3 class="card-title">Kaos Salur Polos Cotton Combed</h3>
-                <div class="card-text">
-                  <p class="harga">Rp. 120.000</p>
-
-                  <p>Material :</p>
-                  <ul>
-                    <li>Cotton Combed 24s Sulfur 170-180 Gsm.</li>
-                    <li>Warna Tidak Cepat Pudar</li>
-                    <li>
-                      Lembut, Mudah Menyerap Keringat, Tidak Gerah, dan Tidak
-                      Kaku
-                    </li>
-                  </ul>
-
-                  <p></p>
-                  <p>Jahitan :</p>
-                  <ul>
-                    <li>Overdeck (2 jarum) Benang cotton combed 24s</li>
-                    <li>Bagian pundak dan bawah menggunakan jahitan rantai</li>
-                    <li>Melalui proses lebih dari 3 x Finishing</li>
-                  </ul>
-                  <p>Size chart :</p>
-                  <ul>
-                    <li>
-                      M : Lebar 53 cm x Panjang 70 cm ( Lingkar dada 106 cm )
-                    </li>
-                    <li>
-                      L : Lebar 55 cm x Panjang 72 cm ( Lingkar dada 110 cm )
-                    </li>
-                    <li>
-                      XL : Lebar 57 cm x Panjang 74 cm ( Lingkar dada 114 cm )
-                    </li>
-                    <li>
-                      XXL : Lebar 59 cm x Panjang 76 cm ( Lingkar dada 118 cm )
-                    </li>
-                  </ul>
-                  <br />
-                </div>
-              </div>
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProduct1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Baju Stylish</h5>
+              <p class="card-text">
+                Baju stylish dengan desain modern dan bahan berkualitas.
+                Tersedia dalam beberapa pilihan warna dan pola.
+              </p>
+              <p class="fw-bold">Rp 250.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Baju%20Stylish"
+                class="btn btn-whatsapp"
+                >Tanya Admin</a
+              >
             </div>
           </div>
-
-          <div class="col-md-4 mb-5">
-            <div class="card product-card shadow-sm">
-              <img
-                src="https://via.placeholder.com/400"
-                alt="Product 1"
-                class="card-img-top"
-              />
-              <div class="card-body">
-                <h3 class="card-title">Super Comfortable Sofa</h3>
-                <p class="card-text">
-                  Get an exclusive 20% discount on our Super Comfortable Sofa!
-                  This sofa is designed for maximum relaxation and style. Don't
-                  miss out on this amazing deal!
-                </p>
-                <a
-                  href="https://api.whatsapp.com/send?phone=+6285245065929&text=Hello%20I'm%20interested%20in%20the%20Super%20Comfortable%20Sofa"
-                  class="btn btn-pink btn-block"
-                  >Contact on WhatsApp</a
-                >
-              </div>
-            </div>
-          </div>
-
-          <!-- Product 2 -->
-          <!-- Add carousel and content for Product 2 here -->
-
-          <!-- Product 3 -->
-          <!-- Add carousel and content for Product 3 here -->
         </div>
-        <!-- Add more product sections here -->
-      </section>
-    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <p class="footer-text">
-              &copy; 2023 RPS Collection | Made by RPS IT Team
-            </p>
+        <!-- Product 2 -->
+        <div class="col">
+          <div class="product-card card h-100">
+            <img
+              src="https://down-id.img.susercontent.com/file/21b5d2d295588bbee79574a0cbd38290"
+              class="card-img-top"
+              alt="Baju 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Baju Kasual</h5>
+              <p class="card-text">
+                Baju kasual yang nyaman untuk kegiatan sehari-hari.
+              </p>
+              <p class="fw-bold">Rp 200.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Baju%20Kasual"
+                class="btn btn-whatsapp"
+                >Tanya Admin</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col">
+          <div class="product-card card h-100">
+            <img
+              src="https://down-id.img.susercontent.com/file/id-11134207-7qul6-lj6ok8casuay5d"
+              class="card-img-top"
+              alt="Baju 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Baju Formal</h5>
+              <p class="card-text">
+                Baju formal dengan sentuhan elegan untuk acara resmi.
+              </p>
+              <p class="fw-bold">Rp 300.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Baju%20Formal"
+                class="btn btn-whatsapp"
+                >Tanya Admin</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col">
+          <div class="product-card card h-100">
+            <img
+              src="https://down-id.img.susercontent.com/file/id-11134207-7r98o-ls1jc03s0nxj27"
+              class="card-img-top"
+              alt="Baju 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Baju Sporty</h5>
+              <p class="card-text">
+                Baju sporty untuk mendukung aktivitas olahraga Anda.
+              </p>
+              <p class="fw-bold">Rp 220.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Baju%20Sporty"
+                class="btn btn-whatsapp"
+                >Tanya Admin</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="product-card card h-100">
+            <div
+              id="carouselProduct1"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://down-id.img.susercontent.com/file/sg-11134201-23010-19pdht7mtmmv91"
+                    class="d-block w-100"
+                    alt="Baju 1 - Gambar 1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://down-id.img.susercontent.com/file/id-11134201-23020-n8s7km5mgjnvf5"
+                    class="d-block w-100"
+                    alt="Baju 1 - Gambar 2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://down-id.img.susercontent.com/file/id-11134201-23020-v2r5yn5mgjnvf1"
+                    class="d-block w-100"
+                    alt="Baju 1 - Gambar 3"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselProduct1"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselProduct1"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Baju Stylish</h5>
+              <p class="card-text">
+                Baju stylish dengan desain modern dan bahan berkualitas.
+                Tersedia dalam beberapa pilihan warna dan pola.
+              </p>
+              <p class="fw-bold">Rp 250.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Baju%20Stylish"
+                class="btn btn-whatsapp"
+                >Tanya Admin</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col">
+          <div class="product-card card h-100">
+            <img
+              src="https://down-id.img.susercontent.com/file/id-11134207-7qul5-lk57rwtlsr88aa"
+              class="card-img-top"
+              alt="Baju 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Baju Kasual</h5>
+              <p class="card-text">
+                Baju kasual yang nyaman untuk kegiatan sehari-hari.
+              </p>
+              <p class="fw-bold">Rp 200.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Baju%20Kasual"
+                class="btn btn-whatsapp"
+                >Tanya Admin</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="col">
+          <div class="product-card card h-100">
+            <img
+              src="https://down-id.img.susercontent.com/file/id-11134207-7qul3-lk57rwtlvkd4f2"
+              class="card-img-top"
+              alt="Baju 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Baju Formal</h5>
+              <p class="card-text">
+                Baju formal dengan sentuhan elegan untuk acara resmi.
+              </p>
+              <p class="fw-bold">Rp 300.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Baju%20Formal"
+                class="btn btn-whatsapp"
+                >Tanya Admin</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col">
+          <div class="product-card card h-100">
+            <img
+              src="https://down-id.img.susercontent.com/file/id-11134207-7quky-lk57rwtlu5sodf"
+              class="card-img-top"
+              alt="Baju 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Baju Sporty</h5>
+              <p class="card-text">
+                Baju sporty untuk mendukung aktivitas olahraga Anda.
+              </p>
+              <p class="fw-bold">Rp 220.000</p>
+              <a
+                href="https://wa.me/6281234567890?text=Saya%20tertarik%20dengan%20Baju%20Sporty"
+                class="btn btn-whatsapp"
+                >Tanya Admin</a
+              >
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 RPS MAN'S | RPS COLLECTIONS| All Rights Reserved</p>
     </footer>
 
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Google tag (gtag.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-FH4XSGL44X"
@@ -348,10 +363,9 @@
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'G-FH4XSGL44X');
+      gtag("config", "G-FH4XSGL44X");
     </script>
   </body>
 </html>
-<!-- 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 -->
